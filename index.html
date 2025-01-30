@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulář do Google Sheets</title>
+</head>
+<body>
+    <h2>Odeslat formulář</h2>
+    <form id="formular">
+        <label>Jméno:</label>
+        <input type="text" id="jmeno" required><br>
+
+        <label>E-mail:</label>
+        <input type="email" id="email" required><br>
+
+        <label>Zpráva:</label>
+        <textarea id="zprava" required></textarea><br>
+
+        <button type="submit">Odeslat</button>
+    </form>
+
+    <p id="status"></p>
+
+    <script>
+        document.getElementById("formular").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let data = {
+                jmeno: document.getElementById("jmeno").value,
+                email: document.getElementById("email").value,
+                zprava: document.getElementById("zprava").value
+            };
+
+            fetch("https://script.google.com/macros/s/AKfycbzDLMdYBEnOQ8iy-awCGFsuvs8pxrRtpuFHYV-ByBrnaaLJQb3c2sMMybOh88_1oUh-/exec", {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: { "Content-Type": "application/json" }
+            })
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById("status").innerText = text;
+                document.getElementById("formular").reset();
+            })
+            .catch(error => console.error("Chyba:", error));
+        });
+    </script>
+</body>
+</html>
+
+
 
