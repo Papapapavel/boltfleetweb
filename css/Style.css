@@ -1,0 +1,368 @@
+/* CSS RESET*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*=====================BASE style=================================*/
+
+body {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.wrapper {
+    width: 1120px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*------------------------HEADER--------------------------------------*/
+
+.page-header {
+    height: 66px;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+.page-header .logo {
+    float: left;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.page-header .main-nav {
+    float: right;
+}
+
+.main-nav li {
+    float: left;
+    margin-left: 90px;
+}
+
+.main-nav li a {
+    float: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    line-height: 66px;
+
+}
+
+.main-nav li a:hover {
+    color:#0e8f4f;
+}
+
+
+/*------------------------MAIN-----------------------------------*/
+/*------------------------BANNER-----------------------------------*/
+
+.banner {
+    height: 800px;
+    background: url(../images/Bolt-Food-Delivery-5.jpg);
+    background-size: cover;
+    padding-top: 320px;
+    box-sizing: border-box;
+}
+
+.banner-block {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 21px;
+    font-weight: 300;
+    margin: 25px 0;
+}
+
+.inviteForm {
+    /*
+    display: block;
+    padding: 20px 30px;
+    color: inherit;
+    background: #0e8f4f;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    width: 166px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: 0 auto;
+    */
+    display: block;
+    padding: 20px 30px;
+    color: white; /* Lepší kontrast s pozadím */
+    background: linear-gradient(135deg, #0e8f4f, #0b6c3a); /* Jemný přechod barev */
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    width: 166px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: 0 auto;
+    text-align: center;
+    transition: all 0.4s ease; /* Plynulý přechod pro všechny vlastnosti */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Jemný stín pro 3D efekt */
+}
+
+.inviteForm:hover {
+    /*
+    box-shadow: inset 0 0 50px rgba(9, 231, 213, 0.959);
+    transition-delay: 150ms;
+    */
+    background: linear-gradient(135deg, #09e7d5, #0e8f4f); /* Změna barev při hoveru */
+    box-shadow: inset 0 0 50px rgba(7, 173, 160, 0.959), 0 8px 20px rgba(0, 0, 0, 0.3); /* Zvýrazněný stín */
+    transform: scale(1.05); /* Lehký zvětšovací efekt */
+    transition-delay: 100ms; /* Malé zpoždění při hoveru */
+    cursor: pointer;
+    color: black;
+  
+}
+
+
+
+
+/*------------------------ARTICLE-----------------------------------*/
+.articles{
+    background: #1b1b1b;
+    background: linear-gradient(275deg, rgba(14, 143, 79,1) 50%, rgba(255,255,255,1) 50%);
+}
+.articles>.wrapper::after, .page-footer>.wrapper::after{
+    content: ".";
+    font-size: 0;
+    height: 1px;
+    width: 100%;
+    display: block;
+    clear: both;
+}
+
+article{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 60px;
+}
+
+article:first-of-type{
+    padding-right: 65px;
+    color: #0e8f4f;
+}
+
+article:last-of-type{
+    padding-left: 65px;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 300;
+}
+
+h2::after{
+    content: ".";
+    font-size: 0;
+    display: block;
+    height: 2px;
+    width: 38px;
+    background: #ca0500;
+    margin: 25px 0 26px;
+}
+.quote{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.text{
+    font-weight: 300;   
+    margin-bottom: 60px;
+}
+
+/*------------------------FOOTER-----------------------------------*/
+
+.page-footer{
+    background-color: #000;
+    padding-top: 25px;
+}
+
+.footer-col{
+    width: 30%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.page-footer h3{
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.page-footer h3::after{
+    content: ".";
+    font-size: 0;
+    width: 90%;
+    height: 1px;
+    background: #292929;
+    display: block;
+    margin: 15px 0px;
+
+}
+
+.page-footer li {
+    color: #999;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.page-footer li:hover{
+    color: #fff;
+}
+
+.page-footer li a{
+    text-decoration: none;
+    color: white;
+}
+
+.copy{
+    color: #585858;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
