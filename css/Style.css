@@ -149,8 +149,7 @@ body {
 
 .page-header {
     height: 66px;
-    background: rgba(255, 255, 255, 0.8);
-    width: 100%;
+    background: rgba(248, 245, 233, 0.8);
     position: sticky;
     left: 0;
     top: 0;
@@ -320,7 +319,7 @@ h2::after{
 /*------------------------FOOTER-----------------------------------*/
 
 .page-footer{
-    background-color: #000;
+    background-color: #F8F5E9;
     padding-top: 25px;
 }
 
@@ -328,6 +327,7 @@ h2::after{
     width: 30%;
     margin: 0 auto;
     box-sizing: border-box;
+    color: black;
 
 }
 
@@ -354,16 +354,16 @@ h2::after{
 }
 
 .page-footer li:hover{
-    color: #fff;
+    color: #000 ;
 }
 
 .page-footer li a{
     text-decoration: none;
-    color: #0ee479;
+    color: #3A7D44;
 }
 
 .copy{
-    color: #0ee479;
+    color: #3A7D44;
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
