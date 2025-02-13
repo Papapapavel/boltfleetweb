@@ -301,7 +301,7 @@ h2::after{
     font-size: 0;
     display: block;
     height: 2px;
-    width: 38px;
+    width: 35px;
     background: #ca0500;
     margin: 25px 0 26px;
 }
@@ -328,6 +328,7 @@ h2::after{
     width: 30%;
     margin: 0 auto;
     box-sizing: border-box;
+
 }
 
 .page-footer h3{
@@ -358,11 +359,11 @@ h2::after{
 
 .page-footer li a{
     text-decoration: none;
-    color: white;
+    color: #0ee479;
 }
 
 .copy{
-    color: #585858;
+    color: #0ee479;
     margin-top: 10px;
     margin-bottom: 50px;
 }
