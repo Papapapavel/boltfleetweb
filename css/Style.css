@@ -204,13 +204,20 @@ body {
 }
 
 .bannerContact {
-    height: 800px;
+    height: 1000px;
     background: url(../images/courier_scooter_darker_1200x774.png);
     background-size: cover;
     padding-top: 320px;
     box-sizing: border-box;
 }
 
+.bannerBoxBuild {
+    height: 1000px;
+    background: url();
+    background-size: cover;
+    padding-top: 320px;
+    box-sizing: border-box;
+}
 
 .banner-block {
     margin-left: auto;
@@ -251,7 +258,7 @@ h1 {
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    width: 166px;
+    width: 180px;
     box-sizing: border-box;
     border-radius: 25px;
     margin: 0 auto;
