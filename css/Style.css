@@ -215,8 +215,9 @@ body {
     height: 1000px;
     background: url();
     background-size: cover;
-    padding-top: 320px;
+    padding-top: 200px;
     box-sizing: border-box;
+    background-color:rgb(248, 245, 233);
 }
 
 .banner-block {
@@ -226,6 +227,7 @@ body {
     font-weight: bold;
     text-align: center;
 }
+
 
 h1 {
     text-transform: uppercase;
