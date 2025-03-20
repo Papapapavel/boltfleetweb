@@ -490,4 +490,24 @@ h2::after{
     .hamburger {
         display: block; /* Zobrazí tlačítko na mobilu */
     }
+
+    article {
+        width: 100%;  /* Article zabere celou šířku */
+        float: none;  /* Odstraní plovoucí prvek */
+        padding: 20px;  /* Přidá trochu vnitřního prostoru */
+        display: block;
+    }
+
+    article:first-of-type {
+        padding-right: 0; /* Reset paddingu */
+        background-color: white;
+    }
+
+    article:last-of-type {
+        padding-left: 3%; /* Reset paddingu */
+        background-color: rgb(14, 143, 79,1);
+    }
+
+
+
 }
