@@ -184,6 +184,22 @@ body {
 }
 
 
+
+/*-----------------------Hamburger----------------------------------*/
+   /* Hamburger tlačítko */
+   .hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+    padding-top: 2.5%;
+    
+}
+
+
+
 /*------------------------MAIN-----------------------------------*/
 /*------------------------BANNER-----------------------------------*/
 
@@ -418,4 +434,60 @@ h2::after{
     color: #3A7D44;
     margin-top: 10px;
     margin-bottom: 35px;
+}
+
+
+/*------------------------Responsibility-----------------------------------*/
+
+@media (max-width: 768px) {
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .main-nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 66px;
+        left: 0;
+        width: 100%;
+        background: rgba(248, 245, 233, 0.8);
+        padding: 0;
+
+        /* Skryté na začátku */
+        opacity: 0;
+        transform: translateY(-10px);
+        visibility: hidden;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .main-nav ul.active {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+
+     
+    
+    }
+
+    /* Skryté odkazy na začátku */
+    .main-nav li {
+        opacity: 0;
+        transform: translateY(-10px);
+        padding-left: 60%;
+      
+    }
+
+    /* Po aktivaci se odkazy zobrazují postupně */
+    .main-nav ul.active li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+
+    .hamburger {
+        display: block; /* Zobrazí tlačítko na mobilu */
+    }
 }
