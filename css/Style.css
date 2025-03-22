@@ -149,7 +149,7 @@ body {
 
 .page-header {
     height: 66px;
-    background: rgba(248, 245, 233, 0.8);
+    background: rgba(248, 245, 233, 0.87);
     position: sticky;
     left: 0;
     top: 0;
@@ -435,6 +435,32 @@ h2::after{
     margin-top: 10px;
     margin-bottom: 35px;
 }
+/*------------------------Video-------------------------------------------*/
+#Taska {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: none;
+    allow: accelerometer; 
+    allow: autoplay;
+    allow: clipboard-write;
+    allow: encrypted-media;
+    allow: gyroscope;
+    allow: picture-in-picture;
+    allow: web-share;
+    referrer-policy: strict-origin-when-cross-origin;
+}
+
+/*=========================mapa=============================================*/
+
+#Mapa {
+    width: 800px;
+    height: 450px;
+    padding-bottom: 50px;
+    border: none;
+}
+
 
 
 /*------------------------Responsibility-----------------------------------*/
@@ -452,7 +478,7 @@ h2::after{
         top: 66px;
         left: 0;
         width: 100%;
-        background: rgba(248, 245, 233, 0.8);
+        background: rgba(248, 245, 233, 0.87);
         padding: 0;
 
         /* Skryté na začátku */
@@ -506,6 +532,30 @@ h2::after{
     article:last-of-type {
         padding-left: 3%; /* Reset paddingu */
         background-color: rgb(14, 143, 79,1);
+    }
+
+    .footer-col{
+        width: 75%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        color: black;
+    
+    }
+
+
+    .bannerBoxBuild {
+        height: auto;
+        background: url();
+        background-size: cover;
+        padding-top: 10%;
+        box-sizing: border-box;
+        background-color:rgb(248, 245, 233);
+    }
+
+    #Mapa {
+        width: 100%;
+    
+        border: none;
     }
 
 
