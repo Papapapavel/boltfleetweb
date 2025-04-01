@@ -194,7 +194,7 @@ body {
     border: none;
     cursor: pointer;
     float: right;
-    padding-top: 2%;
+    padding-top: 18px;
     
 }
 
@@ -256,19 +256,7 @@ h1 {
 }
 
 .inviteForm {
-    /*
-    display: block;
-    padding: 20px 30px;
-    color: inherit;
-    background: #0e8f4f;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    width: 166px;
-    box-sizing: border-box;
-    border-radius: 25px;
-    margin: 0 auto;
-    */
+  
     display: block;
     padding: 20px 30px;
     color: white; /* Lepší kontrast s pozadím */
@@ -286,10 +274,7 @@ h1 {
 }
 
 .inviteForm:hover {
-    /*
-    box-shadow: inset 0 0 50px rgba(9, 231, 213, 0.959);
-    transition-delay: 150ms;
-    */
+ 
     background: linear-gradient(135deg, #09e7d5, #0e8f4f); /* Změna barev při hoveru */
     box-shadow: inset 0 0 50px rgba(7, 173, 160, 0.959), 0 8px 20px rgba(0, 0, 0, 0.3); /* Zvýrazněný stín */
     transform: scale(1.05); /* Lehký zvětšovací efekt */
@@ -442,14 +427,6 @@ h2::after{
     height: auto;
     aspect-ratio: 16 / 9;
     border: none;
-    allow: accelerometer; 
-    allow: autoplay;
-    allow: clipboard-write;
-    allow: encrypted-media;
-    allow: gyroscope;
-    allow: picture-in-picture;
-    allow: web-share;
-    referrer-policy: strict-origin-when-cross-origin;
 }
 
 /*=========================mapa=============================================*/
