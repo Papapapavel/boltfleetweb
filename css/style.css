@@ -13,6 +13,7 @@ body {
     margin: 0 auto;
 }
 
+
 /*------------------------HEADER--------------------------------------*/
 
 .page-header {
@@ -60,16 +61,22 @@ body {
 /*-----------------------Hamburger----------------------------------*/
 /* Hamburger tlačítko */
 .hamburger {
+    appearance: none;
     display: none;
-    font-size: 30px;
     background: none;
+    padding-top: 12px;
+    padding-right: 5px;
     border: none;
     cursor: pointer;
     float: right;
-    padding-top: 18px;
+    color: black;
 
 }
-
+.hamburger img{
+    display: block; 
+    width: 42px;  
+    height: 42px;
+  }
 
 
 /*------------------------MAIN-----------------------------------*/
@@ -113,7 +120,7 @@ body {
     background-size: cover;
     padding-top: 200px;
     box-sizing: border-box;
-    background-color: rgb(248, 245, 233);
+    background-color: rgb(14, 143, 79, 1);
 }
 
 .banner-block {
@@ -148,13 +155,15 @@ h1 {
     width: 180px;
     box-sizing: border-box;
     border-radius: 25px;
-    margin: 0 auto;
+    margin: 0 auto 15px auto;
     text-align: center;
     transition: all 0.4s ease;
     /* Plynulý přechod pro všechny vlastnosti */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     /* Jemný stín pro 3D efekt */
 }
+
+
 
 .inviteForm:hover {
 
@@ -183,7 +192,7 @@ h1 {
 .page-footer>.wrapper::after {
     content: ".";
     font-size: 0;
-    height: 1px;
+    height: 0px;
     width: 100%;
     display: block;
     clear: both;
@@ -448,7 +457,7 @@ h2 {
         background-size: cover;
         padding-top: 10%;
         box-sizing: border-box;
-        background-color: rgb(248, 245, 233);
+        background-color: rgb(14, 143, 79, 1);
     }
 
     #Mapa {
@@ -548,7 +557,7 @@ h2 {
         background-size: cover;
         padding-top: 10%;
         box-sizing: border-box;
-        background-color: rgb(248, 245, 233);
+        background-color: rgb(14, 143, 79, 1);
     }
 
     #Mapa {
