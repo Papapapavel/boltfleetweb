@@ -59,7 +59,7 @@ body {
 
 
 /*-----------------------Hamburger----------------------------------*/
-/* Hamburger tlačítko */
+
 .hamburger {
     appearance: none;
     display: none;
@@ -117,8 +117,8 @@ body {
 .bannerBoxBuild {
     height: 1000px;
     background: url();
+    padding-top: 140px;
     background-size: cover;
-    padding-top: 200px;
     box-sizing: border-box;
     background-color: rgb(14, 143, 79, 1);
 }
@@ -332,38 +332,37 @@ h2 {
 
 /*=========================tabulka=====================================*/
 
-/* --- Styly pro tabulku otevírací doby --- */
+
 .opening-hours-table {
-    width: 100%; /* Nebo nastavte pevnou šířku, např. 300px */
-    margin-top: 15px; /* Odsazení od předchozího obsahu */
+    width: 100%; 
+    margin-top: 15px; 
     margin-bottom: 20px;
-    border-collapse: collapse; /* Spojí okraje buněk */
-    color: black; /* Nastaví barvu textu uvnitř tabulky */
-    font-size: 15px; /* Můžete upravit velikost písma */
+    border-collapse: collapse;
+    color: black; 
+    font-size: 15px; 
   }
   
   .opening-hours-table th, 
   .opening-hours-table td {
-    border: 1px solid #ccc; /* Tenký šedý okraj buněk */
-    padding: 8px 12px; /* Vnitřní odsazení v buňkách */
-    text-align: left; /* Zarovnání textu vlevo */
+    border: 1px solid #ccc; 
+    padding: 8px 12px; 
+    text-align: left;
   }
   
   .opening-hours-table th {
-    background-color: #f2f2f2; /* Lehce šedé pozadí záhlaví */
+    background-color: #f2f2f2;
     font-weight: bold;
-    text-align: center; /* Zarovnání záhlaví na střed */
+    text-align: center; 
   }
   
   .opening-hours-table tr:nth-child(even) {
-    background-color: #f9f9f9; /* Lehké zvýraznění sudých řádků (zebra) */
+    background-color: #f9f9f9; 
   }
   
   .opening-hours-table td:last-child {
-    text-align: right; /* Zarovnání časů vpravo */
+    text-align: right;
     font-weight: bold;
   }
-  /* --- Konec stylů pro tabulku --- */
 
 /*------------------------Responsivity-----------------------------------*/
 
@@ -399,7 +398,6 @@ h2 {
 
     }
 
-    /* Skryté odkazy na začátku */
     .main-nav li {
         opacity: 0;
         transform: translateY(-10px);
@@ -407,7 +405,7 @@ h2 {
 
     }
 
-    /* Po aktivaci se odkazy zobrazují postupně */
+
     .main-nav ul.active li {
         opacity: 1;
         transform: translateY(0);
@@ -417,28 +415,28 @@ h2 {
 
     .hamburger {
         display: block;
-        /* Zobrazí tlačítko na mobilu */
+ 
     }
 
     article {
         width: 100%;
-        /* Article zabere celou šířku */
+     
         float: none;
-        /* Odstraní plovoucí prvek */
+      
         padding: 20px;
-        /* Přidá trochu vnitřního prostoru */
+ 
         display: block;
     }
 
     article:first-of-type {
         padding-right: 0;
-        /* Reset paddingu */
+
         background-color: white;
     }
 
     article:last-of-type {
         padding-left: 3%;
-        /* Reset paddingu */
+   
         background-color: rgb(14, 143, 79, 1);
     }
 
@@ -455,7 +453,7 @@ h2 {
         height: auto;
         background: url();
         background-size: cover;
-        padding-top: 10%;
+        padding-top: 5%;
         box-sizing: border-box;
         background-color: rgb(14, 143, 79, 1);
     }
@@ -486,7 +484,6 @@ h2 {
         width: 100%;
         background: rgba(248, 245, 233, 0.87);
         padding: 0;
-        /* Skryté na začátku */
         opacity: 0;
         transform: translateY(-10px);
         visibility: hidden;
@@ -499,7 +496,7 @@ h2 {
         visibility: visible;
     }
 
-    /* Skryté odkazy na začátku */
+
     .main-nav li {
         opacity: 0;
         transform: translateY(-10px);
@@ -507,7 +504,7 @@ h2 {
 
     }
 
-    /* Po aktivaci se odkazy zobrazují postupně */
+
     .main-nav ul.active li {
         opacity: 1;
         transform: translateY(0);
@@ -517,28 +514,28 @@ h2 {
 
     .hamburger {
         display: block;
-        /* Zobrazí tlačítko na mobilu */
+
     }
 
     article {
         width: 100%;
-        /* Article zabere celou šířku */
+
         float: none;
-        /* Odstraní plovoucí prvek */
+
         padding: 20px;
-        /* Přidá trochu vnitřního prostoru */
+    
         display: block;
     }
 
     article:first-of-type {
         padding-right: 0;
-        /* Reset paddingu */
+   
         background-color: white;
     }
 
     article:last-of-type {
         padding-left: 3%;
-        /* Reset paddingu */
+     
         background-color: rgb(14, 143, 79, 1);
     }
 
@@ -555,7 +552,7 @@ h2 {
         height: auto;
         background: url();
         background-size: cover;
-        padding-top: 10%;
+        padding-top: 5%;
         box-sizing: border-box;
         background-color: rgb(14, 143, 79, 1);
     }
